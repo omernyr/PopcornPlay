@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="PopcornPlay" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="KDY-I1-HD4" id="RLx-Ld-Txe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,20 +19,20 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="omer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3P-lf-G3R">
-                    <rect key="frame" x="177" y="415.66666666666669" width="39.333333333333343" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KDY-I1-HD4">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Q3P-lf-G3R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DUZ-T6-Hhy"/>
-                <constraint firstItem="Q3P-lf-G3R" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SSg-l7-Gm5"/>
+                <constraint firstItem="KDY-I1-HD4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7k9-7b-It8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KDY-I1-HD4" secondAttribute="bottom" id="UZQ-Dq-2h5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KDY-I1-HD4" secondAttribute="trailing" id="j38-Lb-LB6"/>
+                <constraint firstItem="KDY-I1-HD4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qUC-fW-7Wr"/>
             </constraints>
-            <point key="canvasLocation" x="117" y="20"/>
+            <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
