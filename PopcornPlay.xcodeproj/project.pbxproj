@@ -54,10 +54,15 @@
 		52B692DC29F2DB60003132D8 /* PopcornPlay */ = {
 			isa = PBXGroup;
 			children = (
-				52B692F129F2DBA0003132D8 /* MainViewController */,
+				52B692FD29F2E08F003132D8 /* Networking */,
+				52B692FC29F2E080003132D8 /* Extensions */,
+				52B692FB29F2E076003132D8 /* Resources */,
+				52B692FA29F2E06A003132D8 /* Classes */,
+				52B692F929F2E066003132D8 /* Model */,
+				52B692F829F2E05D003132D8 /* Controllers */,
+				52B692F729F2E053003132D8 /* ViewModel */,
+				52B692F629F2E049003132D8 /* View */,
 				52B692DD29F2DB60003132D8 /* AppDelegate.swift */,
-				52B692E629F2DB61003132D8 /* Assets.xcassets */,
-				52B692E829F2DB61003132D8 /* LaunchScreen.storyboard */,
 				52B692EB29F2DB61003132D8 /* Info.plist */,
 			);
 			path = PopcornPlay;
@@ -70,6 +75,65 @@
 				52B692F329F2DBC1003132D8 /* MainViewController.xib */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		52B692F629F2E049003132D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52B692E829F2DB61003132D8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52B692F729F2E053003132D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		52B692F829F2E05D003132D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52B692F129F2DBA0003132D8 /* MainViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		52B692F929F2E066003132D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52B692FA29F2E06A003132D8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		52B692FB29F2E076003132D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52B692E629F2DB61003132D8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52B692FC29F2E080003132D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52B692FD29F2E08F003132D8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
