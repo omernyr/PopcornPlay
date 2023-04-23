@@ -17,4 +17,17 @@ class MainViewModel {
         4
     }
     
+    func getData() {
+        
+        APICaller.getTrendingMovies { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+        
+    }
+    
 }
