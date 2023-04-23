@@ -1,10 +1,3 @@
-//
-//  APICaller.swift
-//  PopcornPlay
-//
-//  Created by macbook pro on 21.04.2023.
-//
-
 import Foundation
 
 enum NetworkError: Error {
@@ -35,6 +28,5 @@ public class APICaller {
             completion(.success(results))
             
         }.resume()
-        
     }
 }
