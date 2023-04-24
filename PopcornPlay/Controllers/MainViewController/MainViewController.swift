@@ -12,12 +12,14 @@ class MainViewController: UIViewController {
     
     // IBOutlets
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var myIndicator: UIActivityIndicatorView!
     
     // ViewModels
     var viewModel: MainViewModel = MainViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindViewModel()
         configView()
     }
     
@@ -30,5 +32,22 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         viewModel.getData()
+    }
+    
+    private func bindViewModel() {
+        
+        viewModel.isLoading?.bind({ [weak self] isLoading in
+                
+            guard let self = self, let isLoading = isLoading else { return }
+            
+            DispatchQueue.main.async {
+                if isLoading {
+                    self.myIndicator.startAnimating()
+                } else {
+                    self.myIndicator.stopAnimating()
+                }
+                
+            }
+        })
     }
 }

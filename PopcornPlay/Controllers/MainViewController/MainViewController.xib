@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="PopcornPlay" customModuleProvider="target">
             <connections>
+                <outlet property="myIndicator" destination="j3d-PS-gTp" id="oyp-PD-j7c"/>
                 <outlet property="tableView" destination="KDY-I1-HD4" id="RLx-Ld-Txe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,12 +24,18 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-PS-gTp">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" red="0.58823529409999997" green="0.74901960779999999" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="KDY-I1-HD4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7k9-7b-It8"/>
+                <constraint firstItem="j3d-PS-gTp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Iy2-Ep-5Sv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KDY-I1-HD4" secondAttribute="bottom" id="UZQ-Dq-2h5"/>
+                <constraint firstItem="j3d-PS-gTp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="X6h-rT-Kuk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KDY-I1-HD4" secondAttribute="trailing" id="j38-Lb-LB6"/>
                 <constraint firstItem="KDY-I1-HD4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qUC-fW-7Wr"/>
             </constraints>
