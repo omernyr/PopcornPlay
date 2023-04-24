@@ -17,6 +17,7 @@
 		52B6930329F2F70C003132D8 /* NetworkingConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6930229F2F70C003132D8 /* NetworkingConstant.swift */; };
 		52B6930529F2F887003132D8 /* TrendingMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6930429F2F887003132D8 /* TrendingMovieModel.swift */; };
 		52B6930729F2FAB2003132D8 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B6930629F2FAB2003132D8 /* APICaller.swift */; };
+		52D4619829F6962200ADEB9F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4619729F6962200ADEB9F /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		52B6930229F2F70C003132D8 /* NetworkingConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstant.swift; sourceTree = "<group>"; };
 		52B6930429F2F887003132D8 /* TrendingMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieModel.swift; sourceTree = "<group>"; };
 		52B6930629F2FAB2003132D8 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		52D4619729F6962200ADEB9F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		52B692FA29F2E06A003132D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52D4619729F6962200ADEB9F /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D4619829F6962200ADEB9F /* Observable.swift in Sources */,
 				52B692DE29F2DB60003132D8 /* AppDelegate.swift in Sources */,
 				52B6930529F2F887003132D8 /* TrendingMovieModel.swift in Sources */,
 				52B692FF29F2E455003132D8 /* MainViewController+TableView.swift in Sources */,
