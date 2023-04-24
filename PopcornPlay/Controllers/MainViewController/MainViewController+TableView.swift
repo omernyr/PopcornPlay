@@ -7,6 +7,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.backgroundColor = .clear
+        self.tableView.separatorStyle = .none
         
         self.registerCells()
     }
@@ -31,7 +32,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = self.cellDataSource[indexPath.row].title ?? self.cellDataSource[indexPath.row].name
+        let movieData = self.cellDataSource[indexPath.row]
+        cell.textLabel?.text = self.viewModel.getMovieTitle(movieData)
         return cell
     }
 }
