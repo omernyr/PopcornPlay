@@ -9,7 +9,8 @@ import Foundation
 
 class MainViewModel {
     
-    var isLoading: Observable<Bool>? = Observable(false)
+    var isLoading: Observable<Bool> = Observable(false)
+    var cellDataSource: Observable<[Movie]> = Observable(nil)
     var dataSoruce: TrendingMovieModel?
     
     func numberOfSections() -> Int {
@@ -17,29 +18,31 @@ class MainViewModel {
     }
     
     func numberOfRows(in section: Int) -> Int {
-        4
+        self.dataSoruce?.results?.count ?? 0
     }
     
     func getData() {
         
-        if isLoading?.value ?? true {
+        if isLoading.value ?? true {
             return
         }
-        isLoading?.value = true
+        isLoading.value = true
         APICaller.getTrendingMovies { [weak self] result in
             
-            self?.isLoading?.value = false
+            self?.isLoading.value = false
             
             switch result {
             case .success(let data):
-                
                 self?.dataSoruce = data
-                print(data)
+                self?.mapCellData()
+                print(data.results?.count)
             case .failure(let error):
                 print(error)
             }
         }
-        
     }
     
+    func mapCellData() {
+        self.cellDataSource.value = self.dataSoruce?.results ?? []
+    }
 }

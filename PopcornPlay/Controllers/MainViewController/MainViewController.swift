@@ -10,12 +10,15 @@ import UIKit
 class MainViewController: UIViewController {
     
     
-    // IBOutlets
+    // IBOutlets:
     @IBOutlet var tableView: UITableView!
     @IBOutlet var myIndicator: UIActivityIndicatorView!
     
-    // ViewModels
+    // ViewModels:
     var viewModel: MainViewModel = MainViewModel()
+    
+    // Variables:
+    var cellDataSource: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,7 @@ class MainViewController: UIViewController {
     
     private func bindViewModel() {
         
-        viewModel.isLoading?.bind({ [weak self] isLoading in
+        viewModel.isLoading.bind({ [weak self] isLoading in
                 
             guard let self = self, let isLoading = isLoading else { return }
             
@@ -49,5 +52,11 @@ class MainViewController: UIViewController {
                 
             }
         })
+        
+        viewModel.cellDataSource.bind { [weak self] movies in
+            guard let self = self, let movies = movies else { return }
+            self.cellDataSource = movies
+            self.reloadTableView()
+        }
     }
 }
