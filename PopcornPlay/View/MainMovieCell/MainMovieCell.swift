@@ -6,8 +6,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MainMovieCell: UITableViewCell {
+    
+    public static var identifier: String {
+        get {
+            return "MainMovieCell"
+        }
+    }
+    
+    public static func register() -> UINib {
+        UINib(nibName: "MainMovieCell", bundle: nil)
+    }
     
     // Outlets
     @IBOutlet var backView: UIView!
@@ -19,13 +30,16 @@ class MainMovieCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        backView.round()
-        backView.addBorder(color: .label, width: 10.0)
+        backView.round(10.0)
+        backView.addBorder(color: .label, width: 1.0)
         
         movieImageView.round(5.0)
     }
 
     func setupCell(viewModel: MovieTableCellViewModel) {
-        
+        self.nameLabel.text = viewModel.title
+        self.dateLabel.text = viewModel.date
+        self.rateLabel.text = viewModel.rating
+        self.movieImageView.sd_setImage(with: viewModel.imageURL)
     }
 }
