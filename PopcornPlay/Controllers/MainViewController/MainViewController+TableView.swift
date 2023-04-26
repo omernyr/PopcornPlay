@@ -39,7 +39,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movieID = cellDataSource[indexPath.row].id
+        self.openDetail(movieID: movieID)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         150.0
     }
+    
 }
