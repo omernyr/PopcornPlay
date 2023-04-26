@@ -17,7 +17,8 @@
 * Xib used for UI Design
 * Compatible with iOS 12.0+
 * Live Video
-  - ![netflixclone](https://user-images.githubusercontent.com/89137487/222147517-cc4003ad-6940-4f1e-844d-a3fda72f18a4.gif)
+  - ![gif](https://user-images.githubusercontent.com/89137487/234586437-55ee7c68-2c6b-4cf0-9fab-3a8d38064a28.gif)
+
 
 
 
@@ -26,7 +27,8 @@
   - iOS, macOS ready.
 
 ## Screenshots
-- <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222142921-9eb6c15d-1222-4be7-8b9f-84d99be434cf.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222142968-2b0f5450-d23b-4b72-92e9-6c0da565755d.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222142959-fe4bca64-a4cb-4434-9dbf-880c1cf38815.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222143018-3396b0ff-6784-43c2-a3c0-dc5d5509a97a.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222143040-763cd837-98a7-4f55-8498-cc51d5f4dcd3.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/222143082-e811d5bd-b40a-4286-a8d1-0ac50a1659e3.png"> 
+- <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/234586622-ad1edec1-6917-4f78-9262-b62700d6eafe.png"> <img width="163" alt="1" src="https://user-images.githubusercontent.com/89137487/234586643-54362796-6262-4f44-8b39-788b7f6a0dce.png"> 
+
  
 ## Installation
 
