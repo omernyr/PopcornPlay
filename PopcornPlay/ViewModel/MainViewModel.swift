@@ -35,7 +35,6 @@ class MainViewModel {
             case .success(let data):
                 self?.dataSoruce = data
                 self?.mapCellData()
-                print(data.results?.count)
             case .failure(let error):
                 print(error)
             }
@@ -48,5 +47,12 @@ class MainViewModel {
     
     func getMovieTitle(_ movie: Movie) -> String {
         return movie.title ?? movie.name ?? ""
+    }
+    
+    func retriveMovie( with id: Int) -> Movie? {
+        guard let movie = dataSoruce?.results?.first(where: {$0.id == id}) else {
+            return nil }
+        
+        return movie
     }
 }

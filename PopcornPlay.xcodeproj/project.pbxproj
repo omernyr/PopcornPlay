@@ -15,6 +15,7 @@
 		526E621429F924C900AD6FD0 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 526E621329F924C900AD6FD0 /* SDWebImageMapKit */; };
 		526E621829F92E4500AD6FD0 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E621629F92E4500AD6FD0 /* DetailsMovieViewController.swift */; };
 		526E621929F92E4500AD6FD0 /* DetailsMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526E621729F92E4500AD6FD0 /* DetailsMovieViewController.xib */; };
+		526E621B29F94C6C00AD6FD0 /* DetailsMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E621A29F94C6C00AD6FD0 /* DetailsMovieViewModel.swift */; };
 		52B692DE29F2DB60003132D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B692DD29F2DB60003132D8 /* AppDelegate.swift */; };
 		52B692E729F2DB61003132D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B692E629F2DB61003132D8 /* Assets.xcassets */; };
 		52B692EA29F2DB61003132D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B692E829F2DB61003132D8 /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 		526E620E29F908DD00AD6FD0 /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
 		526E621629F92E4500AD6FD0 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
 		526E621729F92E4500AD6FD0 /* DetailsMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMovieViewController.xib; sourceTree = "<group>"; };
+		526E621A29F94C6C00AD6FD0 /* DetailsMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewModel.swift; sourceTree = "<group>"; };
 		52B692DA29F2DB60003132D8 /* PopcornPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B692DD29F2DB60003132D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B692E629F2DB61003132D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				52B6930029F2E565003132D8 /* MainViewModel.swift */,
 				526E620E29F908DD00AD6FD0 /* MovieTableCellViewModel.swift */,
+				526E621A29F94C6C00AD6FD0 /* DetailsMovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				526E620D29F906FA00AD6FD0 /* UIViewExtensions.swift in Sources */,
 				526E620F29F908DD00AD6FD0 /* MovieTableCellViewModel.swift in Sources */,
 				52B6930329F2F70C003132D8 /* NetworkingConstant.swift in Sources */,
+				526E621B29F94C6C00AD6FD0 /* DetailsMovieViewModel.swift in Sources */,
 				52B692F429F2DBC1003132D8 /* MainViewController.swift in Sources */,
 				52B6930129F2E565003132D8 /* MainViewModel.swift in Sources */,
 			);
