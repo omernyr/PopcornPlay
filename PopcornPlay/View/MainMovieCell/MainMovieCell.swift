@@ -22,7 +22,10 @@ class MainMovieCell: UITableViewCell {
         backView.round()
         backView.addBorder(color: .label, width: 10.0)
         
-        movieImageView.layer.cornerRadius = 5.0
+        movieImageView.round(5.0)
     }
 
+    func setupCell(viewModel: MovieTableCellViewModel) {
+        
+    }
 }
